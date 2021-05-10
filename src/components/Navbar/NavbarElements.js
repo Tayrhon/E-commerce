@@ -13,10 +13,7 @@ export const Nav = styled.nav`
   max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 24px;
-  padding-left: 24px;
-  
-`;
+  `;
 
 export const NavLink = styled(Link)`
   color: #fff;
@@ -26,7 +23,7 @@ export const NavLink = styled(Link)`
   padding: 0 1.5rem;
   cursor: pointer;
   &:hover {
-    color: #15cdfc;
+    color: #bebdd4;
   }
 `;
 
@@ -54,9 +51,12 @@ export const NavMenu = styled.div`
 `;
 
 export const NavBtn = styled.nav`
-  display: flex;
+  display: inline-block;
   align-items: center;
   margin-right: 24px;
+  padding : 3px;
+  border-radius: 80px;
+  background-image: linear-gradient(65deg, #edb8ff, #6148ff);
 
   font-weight: 700;
   @media screen and (max-width: 768px) {
@@ -65,7 +65,8 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(Link)`
-  background: linear-gradient(65deg, #edb8ff, #6148ff);
+display: block;
+  background: #0f0823;
   border-radius: 80px;
   padding: 24px 40px;
   font-size: 16px;
@@ -75,7 +76,6 @@ export const NavBtnLink = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  margin-left: 24px;
   &:after {
     color: #010606;
   }
