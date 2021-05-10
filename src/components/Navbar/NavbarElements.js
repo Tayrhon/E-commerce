@@ -24,7 +24,6 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1.5rem;
-  height: 100%;
   cursor: pointer;
   &:hover {
     color: #15cdfc;
@@ -58,6 +57,7 @@ export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   margin-right: 24px;
+
   font-weight: 700;
   @media screen and (max-width: 768px) {
     display: none;

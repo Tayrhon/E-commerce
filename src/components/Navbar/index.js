@@ -5,15 +5,16 @@ import {
   Bars,
   NavMenu,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from './NavbarElements';
+import logo from '../../images/logo.png'
 
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to='/'>
-          <img src='../../images/logo.png' alt='logo' />
+          <img src={logo} style={{width:150,height:60,}} alt='logo' />
         </NavLink>
         <Bars />
         <NavMenu>
